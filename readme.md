@@ -1,8 +1,3 @@
-# Stagewise Persistent Agent Memory: Proof of Work Proposal
-
-**Author:** Anurag Sharma ([github.com/Anurag13075](https://github.com/Anurag13075))  
-**Target:** Internship Application @ Stagewise  
-**Package:** `@stagewise/agent-memory`
 
 ---
 

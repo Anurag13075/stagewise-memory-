@@ -1,0 +1,56 @@
+{
+    "name": "@stagewise/agent-memory",
+    "version": "0.1.0",
+    "description": "Persistent per-project memory and skill extraction for stagewise coding agents",
+    "license": "AGPL-3.0",
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        },
+        "./store": {
+            "import": "./dist/store/index.js",
+            "types": "./dist/store/index.d.ts"
+        },
+        "./extractor": {
+            "import": "./dist/extractor/index.js",
+            "types": "./dist/extractor/index.d.ts"
+        },
+        "./injector": {
+            "import": "./dist/injector/index.js",
+            "types": "./dist/injector/index.d.ts"
+        },
+        "./ui": {
+            "import": "./dist/ui/index.js",
+            "types": "./dist/ui/index.d.ts"
+        }
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc --project tsconfig.build.json",
+        "dev": "tsc --project tsconfig.build.json --watch",
+        "typecheck": "tsc --noEmit",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "clean": "rm -rf dist"
+    },
+    "dependencies": {
+        "zod": "^3.25.3"
+    },
+    "devDependencies": {
+        "@stagewise/typescript-config": "workspace:*",
+        "@types/node": "22.15.2",
+        "@types/react": "19.2.14",
+        "react": "^19.0.0",
+        "typescript": "^5.8.3",
+        "vitest": "^3.2.0"
+    },
+    "peerDependencies": {
+        "react": "^19.0.0"
+    }
+}
