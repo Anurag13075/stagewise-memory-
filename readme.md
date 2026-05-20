@@ -3,6 +3,8 @@
 
 ## 1. Executive Summary
 
+![Agent-memory](agent.png)
+
 One of the largest friction points in agentic coding today is **"AI Amnesia."** When a developer corrects an agent (e.g., *"Don't use relative imports for shared UI components"*), the agent learns it for that specific session. However, as soon as a new session starts, the context is lost, and the developer is forced to repeat the same corrections.
 
 To solve this, I have built `@stagewise/agent-memory`—a robust, zero-dependency, drop-in TypeScript package designed specifically for the Stagewise monorepo. It acts as a **Persistent Project Brain**, allowing the agent to dynamically learn project conventions, user preferences, and past corrections, persisting them directly to the user's local workspace (`.stagewise/memory.json`).
